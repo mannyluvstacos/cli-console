@@ -1,0 +1,27 @@
+{
+  "name": "cli-console",
+  "version": "0.1.0",
+  "description": "cli console",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undefinedlee/cli-console.git"
+  },
+  "keywords": [
+    "console",
+    "nodejs",
+    "cli"
+  ],
+  "author": "emianbao@vip.qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/undefinedlee/cli-console/issues"
+  },
+  "homepage": "https://github.com/undefinedlee/cli-console#readme",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
