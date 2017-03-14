@@ -3,6 +3,15 @@ require("colors");
 // 动画配置信息
 var animateInfo = {};
 
+function doubel(value){
+	return (value < 10 ? "0" : "") + value;
+}
+function time(){
+	var now = new Date();
+	now = "[" + [doubel(now.getHours()), doubel(now.getMinutes()), doubel(now.getSeconds())].join(":") + "]";
+	return now.gray.dim;
+}
+
 module.exports = {
 	log: function(info){
 		this.stopAnimate();
@@ -13,26 +22,26 @@ module.exports = {
 		this.stopAnimate();
 
 		if(typeof info === "string"){
-			console.log(info.red);
+			console.log(time(), info.red);
 		}else{
-			console.log("Error:>>>".red);
+			console.log(time(), "Error:>>>".red);
 			console.log(info);
 		}
 	},
 	success: function(info){
 		this.stopAnimate();
 
-		console.log(info.green);
+		console.log(time(), info.green);
 	},
 	warn: function(info){
 		this.stopAnimate();
 
-		console.log(info.yellow);
+		console.log(time(), info.yellow);
 	},
 	info: function(info){
 		this.stopAnimate();
 
-		console.log(info.blue);
+		console.log(time(), info.blue);
 	},
 	title: function(info){
 		this.stopAnimate();
