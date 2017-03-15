@@ -22,7 +22,9 @@ module.exports = {
 		this.stopAnimate();
 
 		if(typeof info === "string"){
-			console.log(time(), info.red);
+			info.split("\n").forEach(function(info){
+				console.log(time(), info.red);
+			});
 		}else{
 			console.log(time(), "Error:>>>".red);
 			console.log(info);
@@ -31,17 +33,23 @@ module.exports = {
 	success: function(info){
 		this.stopAnimate();
 
-		console.log(time(), info.green);
+		info.split("\n").forEach(function(info){
+			console.log(time(), info.green);
+		});
 	},
 	warn: function(info){
 		this.stopAnimate();
 
-		console.log(time(), info.yellow);
+		info.split("\n").forEach(function(info){
+			console.log(time(), info.yellow);
+		});
 	},
 	info: function(info){
 		this.stopAnimate();
 
-		console.log(time(), info.blue);
+		info.split("\n").forEach(function(info){
+			console.log(time(), info.blue);
+		});
 	},
 	title: function(info){
 		this.stopAnimate();
