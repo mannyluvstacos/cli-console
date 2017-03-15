@@ -54,7 +54,7 @@ module.exports = {
 	title: function(info){
 		this.stopAnimate();
 
-		info = "==========" + info + "==========";
+		info = "「 " + info + " 」";
 		console.log(info.bold);
 	},
 	animate: function(items, config){
