@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/undefinedlee/cli-console#readme",
   "dependencies": {
-    "colors": "^1.1.2"
+    "@dabh/colors": "^1.1.2"
   }
 }
